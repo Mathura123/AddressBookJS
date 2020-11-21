@@ -1,3 +1,5 @@
+
+
 //Welcome to address book program
 
 //UC1 : Create Contact
@@ -13,7 +15,7 @@ function Contact(fName,lName,address,city,state,zip,phone,email){
     this.email = email;
 }
 
-let contact = new Contact('Mathura', 'Purohit','Street A','NYEZ','NYSD','548787','98 9989898989','m@gmail.com');
+let contact = new Contact('Mayank', 'Purohit','Street A','NYEZ','NYSD','548787','98 9989898989','m@gmail.com');
 
 console.log(contact);
 
