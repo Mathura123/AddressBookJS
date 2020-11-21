@@ -30,7 +30,7 @@ function Contact(fName,lName,address,city,state,zip,phone,email){
     validate.validateAll(this);
 }
 
-let contact1 = new Contact('Chris', 'Gayle','Street A','NYEZ','NYSD','548787','98 9989898989','m@gmail.com');
+let contact1 = new Contact('Mayank', 'Purohit','Street A','NYEZ','NYSD','548787','98 9989898989','m@gmail.com');
 let contact2 = new Contact('Mukesh','Kumar','Street B','Jodh','Rajasthan','342301','91 9798979897','mukesh@gmail.com');
 console.log(contact1);
 
@@ -51,3 +51,10 @@ let nameToDelete = 'Mukesh';
 let index = AddressBook.findIndex(c => c.firstName == nameToDelete);
 AddressBook.splice(index,1);
 console.log(AddressBook);
+
+//UC6 : Number Of Contacts
+let count = 0;
+AddressBook.push(contact1);
+AddressBook.push(contact2);
+let num = AddressBook.reduce((count) => count+1,0);
+console.log('Number of Contacts : ',num);
